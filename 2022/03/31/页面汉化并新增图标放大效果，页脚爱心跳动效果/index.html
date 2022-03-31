@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 6.1.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="description" content="一、页面汉化1.修改_config.yml  注：名称应与所用主题支持的语言相同  二、图标鼠标悬浮放大（部分代码）1._layout.swig123456789101112&lt;div class&#x3D;&quot;container&quot;&gt;    &lt;ul class&#x3D;&quot;icon_lists dib-box navm&quot;&gt;      &lt;li class">
+<meta property="og:type" content="article">
+<meta property="og:title" content="页面汉化并新增图标放大效果，页脚爱心跳动效果">
+<meta property="og:url" content="http://example.com/2022/03/31/%E9%A1%B5%E9%9D%A2%E6%B1%89%E5%8C%96%E5%B9%B6%E6%96%B0%E5%A2%9E%E5%9B%BE%E6%A0%87%E6%94%BE%E5%A4%A7%E6%95%88%E6%9E%9C%EF%BC%8C%E9%A1%B5%E8%84%9A%E7%88%B1%E5%BF%83%E8%B7%B3%E5%8A%A8%E6%95%88%E6%9E%9C/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="一、页面汉化1.修改_config.yml  注：名称应与所用主题支持的语言相同  二、图标鼠标悬浮放大（部分代码）1._layout.swig123456789101112&lt;div class&#x3D;&quot;container&quot;&gt;    &lt;ul class&#x3D;&quot;icon_lists dib-box navm&quot;&gt;      &lt;li class">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/2022/03/31/%E9%A1%B5%E9%9D%A2%E6%B1%89%E5%8C%96%E5%B9%B6%E6%96%B0%E5%A2%9E%E5%9B%BE%E6%A0%87%E6%94%BE%E5%A4%A7%E6%95%88%E6%9E%9C%EF%BC%8C%E9%A1%B5%E8%84%9A%E7%88%B1%E5%BF%83%E8%B7%B3%E5%8A%A8%E6%95%88%E6%9E%9C/image-20220331175652901.png">
+<meta property="og:image" content="http://example.com/2022/03/31/%E9%A1%B5%E9%9D%A2%E6%B1%89%E5%8C%96%E5%B9%B6%E6%96%B0%E5%A2%9E%E5%9B%BE%E6%A0%87%E6%94%BE%E5%A4%A7%E6%95%88%E6%9E%9C%EF%BC%8C%E9%A1%B5%E8%84%9A%E7%88%B1%E5%BF%83%E8%B7%B3%E5%8A%A8%E6%95%88%E6%9E%9C/image-20220331175749081.png">
+<meta property="og:image" content="http://example.com/2022/03/31/%E9%A1%B5%E9%9D%A2%E6%B1%89%E5%8C%96%E5%B9%B6%E6%96%B0%E5%A2%9E%E5%9B%BE%E6%A0%87%E6%94%BE%E5%A4%A7%E6%95%88%E6%9E%9C%EF%BC%8C%E9%A1%B5%E8%84%9A%E7%88%B1%E5%BF%83%E8%B7%B3%E5%8A%A8%E6%95%88%E6%9E%9C/image-20220331180024923.png">
+<meta property="article:published_time" content="2022-03-31T09:47:42.000Z">
+<meta property="article:modified_time" content="2022-03-31T10:53:40.343Z">
+<meta property="article:author" content="Chasel Wang">
+<meta property="article:tag" content="博客页面更新日志">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/2022/03/31/%E9%A1%B5%E9%9D%A2%E6%B1%89%E5%8C%96%E5%B9%B6%E6%96%B0%E5%A2%9E%E5%9B%BE%E6%A0%87%E6%94%BE%E5%A4%A7%E6%95%88%E6%9E%9C%EF%BC%8C%E9%A1%B5%E8%84%9A%E7%88%B1%E5%BF%83%E8%B7%B3%E5%8A%A8%E6%95%88%E6%9E%9C/image-20220331175652901.png">
+
+<link rel="canonical" href="http://example.com/2022/03/31/%E9%A1%B5%E9%9D%A2%E6%B1%89%E5%8C%96%E5%B9%B6%E6%96%B0%E5%A2%9E%E5%9B%BE%E6%A0%87%E6%94%BE%E5%A4%A7%E6%95%88%E6%9E%9C%EF%BC%8C%E9%A1%B5%E8%84%9A%E7%88%B1%E5%BF%83%E8%B7%B3%E5%8A%A8%E6%95%88%E6%9E%9C/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>页面汉化并新增图标放大效果，页脚爱心跳动效果 | Hexo</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">Hexo</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw fa-fw"></i>归档</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+      <div class="container">
+          <ul class="icon_lists dib-box navm">
+            <li class="dib">
+              <a target="_blank" rel="noopener" href="https://www.taobao.com/">
+                <svg class="icon" aria-hidden="true">
+                  <use xlink:href="#icon-shejiaotubiao-08"></use>
+                </svg>
+                <div class="name">淘宝</div>
+              </a>
+            </li>
+            <li class="dib">
+              <a target="_blank" rel="noopener" href="https://www.zhihu.com/">
+                <svg class="icon" aria-hidden="true">
+                  <use xlink:href="#icon-shejiaotubiao-10"></use>
+                </svg>
+                <div class="name">知乎</div>
+              </a>
+            </li>
+            <li class="dib">
+              <a target="_blank" rel="noopener" href="https://www.csdn.net/">
+                <svg class="icon" aria-hidden="true">
+                  <use xlink:href="#icon-csdn"></use>
+                </svg>
+                <div class="name">CSDN</div>
+              </a>
+            </li>
+            <li class="dib">
+              <a target="_blank" rel="noopener" href="https://mail.qq.com/">
+                <svg class="icon" aria-hidden="true">
+                  <use xlink:href="#icon-youxiang"></use>
+                </svg>
+                <div class="name">QQ邮箱</div>
+              </a>
+            </li>
+            <li class="dib">
+              <a target="_blank" rel="noopener" href="https://github.com/">
+                <svg class="icon" aria-hidden="true">
+                  <use xlink:href="#icon-github-fill"></use>
+                </svg>
+                <div class="name">github</div>
+              </a>
+            </li>
+            <li class="dib">
+              <a target="_blank" rel="noopener" href="https://www.bilibili.com/">
+                <svg class="icon" aria-hidden="true">
+                  <use xlink:href="#icon-bilibili"></use>
+                </svg>
+                <div class="name">bilibili</div>
+              </a>
+            </li>
+            <li class="dib">
+              <a target="_blank" rel="noopener" href="https://cn.bing.com/">
+                <svg class="icon" aria-hidden="true">
+                  <use xlink:href="#icon-Bing"></use>
+                </svg>
+                <div class="name">Bing</div>
+              </a>
+            </li>
+            <li class="dib">
+              <a target="_blank" rel="noopener" href="https://www.baidu.com/">
+                <svg class="icon" aria-hidden="true">
+                  <use xlink:href="#icon-baidu"></use>
+                </svg>
+                <div class="name">百度</div>
+              </a>
+            </li>
+            <li class="dib">
+              <a target="_blank" rel="noopener" href="https://y.qq.com/">
+                <svg class="icon" aria-hidden="true">
+                  <use xlink:href="#icon-QQyinle"></use>
+                </svg>
+                <div class="name">QQ音乐</div>
+              </a>
+            </li>
+            <li class="dib">
+              <a target="_blank" rel="noopener" href="https://music.163.com/">
+                <svg class="icon" aria-hidden="true">
+                  <use xlink:href="#icon-wangyiyun"></use>
+                </svg>
+                <div class="name">网易云</div>
+              </a>
+            </li>
+            <li class="dib">
+              <a target="_blank" rel="noopener" href="https://www.djangoproject.com/">
+                <svg class="icon" aria-hidden="true">
+                  <use xlink:href="#icon-django"></use>
+                </svg>
+                <div class="name">Django</div>
+              </a>
+            </li>
+            <li class="dib">
+              <a target="_blank" rel="noopener" href="https://www.xinpianchang.com/">
+                <svg class="icon" aria-hidden="true">
+                  <use xlink:href="#icon-xinpianchang"></use>
+                </svg>
+                <div class="name">新片场</div>
+              </a>
+            </li>
+            <li class="dib">
+              <a target="_blank" rel="noopener" href="https://www.icourse163.org/">
+                <svg class="icon" aria-hidden="true">
+                  <use xlink:href="#icon-zhongguodaxueMOOC"></use>
+                </svg>
+                <div class="name">MOOC</div>
+              </a>
+            </li>
+          </ul>
+        </div>
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/03/31/%E9%A1%B5%E9%9D%A2%E6%B1%89%E5%8C%96%E5%B9%B6%E6%96%B0%E5%A2%9E%E5%9B%BE%E6%A0%87%E6%94%BE%E5%A4%A7%E6%95%88%E6%9E%9C%EF%BC%8C%E9%A1%B5%E8%84%9A%E7%88%B1%E5%BF%83%E8%B7%B3%E5%8A%A8%E6%95%88%E6%9E%9C/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Chasel Wang">
+      <meta itemprop="description" content="只是看着像导航">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          页面汉化并新增图标放大效果，页脚爱心跳动效果
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2022-03-31 17:47:42 / 修改时间：18:53:40" itemprop="dateCreated datePublished" datetime="2022-03-31T17:47:42+08:00">2022-03-31</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h2 id="一、页面汉化"><a href="#一、页面汉化" class="headerlink" title="一、页面汉化"></a>一、页面汉化</h2><h3 id="1-修改-config-yml"><a href="#1-修改-config-yml" class="headerlink" title="1.修改_config.yml"></a>1.修改_config.yml</h3><p><img src="/2022/03/31/%E9%A1%B5%E9%9D%A2%E6%B1%89%E5%8C%96%E5%B9%B6%E6%96%B0%E5%A2%9E%E5%9B%BE%E6%A0%87%E6%94%BE%E5%A4%A7%E6%95%88%E6%9E%9C%EF%BC%8C%E9%A1%B5%E8%84%9A%E7%88%B1%E5%BF%83%E8%B7%B3%E5%8A%A8%E6%95%88%E6%9E%9C/image-20220331175652901.png" alt="image-20220331175652901"></p>
+<p><img src="/2022/03/31/%E9%A1%B5%E9%9D%A2%E6%B1%89%E5%8C%96%E5%B9%B6%E6%96%B0%E5%A2%9E%E5%9B%BE%E6%A0%87%E6%94%BE%E5%A4%A7%E6%95%88%E6%9E%9C%EF%BC%8C%E9%A1%B5%E8%84%9A%E7%88%B1%E5%BF%83%E8%B7%B3%E5%8A%A8%E6%95%88%E6%9E%9C/image-20220331175749081.png" alt="image-20220331175749081"></p>
+<p><strong>注：名称应与所用主题支持的语言相同</strong></p>
+<p><img src="/2022/03/31/%E9%A1%B5%E9%9D%A2%E6%B1%89%E5%8C%96%E5%B9%B6%E6%96%B0%E5%A2%9E%E5%9B%BE%E6%A0%87%E6%94%BE%E5%A4%A7%E6%95%88%E6%9E%9C%EF%BC%8C%E9%A1%B5%E8%84%9A%E7%88%B1%E5%BF%83%E8%B7%B3%E5%8A%A8%E6%95%88%E6%9E%9C/image-20220331180024923.png" alt="image-20220331180024923"></p>
+<h2 id="二、图标鼠标悬浮放大（部分代码）"><a href="#二、图标鼠标悬浮放大（部分代码）" class="headerlink" title="二、图标鼠标悬浮放大（部分代码）"></a>二、图标鼠标悬浮放大（部分代码）</h2><h3 id="1-layout-swig"><a href="#1-layout-swig" class="headerlink" title="1._layout.swig"></a>1._layout.swig</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;container&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">ul</span> <span class="attr">class</span>=<span class="string">&quot;icon_lists dib-box navm&quot;</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">li</span> <span class="attr">class</span>=<span class="string">&quot;dib&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;https://www.taobao.com/&quot;</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">svg</span> <span class="attr">class</span>=<span class="string">&quot;icon&quot;</span> <span class="attr">aria-hidden</span>=<span class="string">&quot;true&quot;</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">use</span> <span class="attr">xlink:href</span>=<span class="string">&quot;#icon-shejiaotubiao-08&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">use</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;/<span class="name">svg</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;name&quot;</span>&gt;</span>淘宝<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="2-CSS"><a href="#2-CSS" class="headerlink" title="2.CSS"></a>2.CSS</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.container1</span> &#123;</span><br><span class="line">  <span class="attribute">padding</span>: <span class="number">30px</span> <span class="number">100px</span>;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">960px</span>;</span><br><span class="line">  <span class="attribute">margin</span>: <span class="number">0</span> auto;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.icon</span> &#123;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">1em</span>;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">1em</span>;</span><br><span class="line">  fill: currentColor;</span><br><span class="line">  <span class="attribute">overflow</span>: hidden;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.icon_lists</span> &#123;</span><br><span class="line">  <span class="attribute">margin</span>: auto;</span><br><span class="line">  <span class="attribute">padding-left</span>: <span class="number">0</span>;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">100%</span> <span class="meta">!important</span>;</span><br><span class="line">  <span class="attribute">overflow</span>: hidden;</span><br><span class="line">  *zoom: <span class="number">1</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.icon_lists</span> <span class="selector-tag">li</span> &#123;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">100px</span>;</span><br><span class="line">  <span class="attribute">margin-bottom</span>: <span class="number">10px</span>;</span><br><span class="line">  <span class="attribute">text-align</span>: center;</span><br><span class="line">  <span class="attribute">list-style</span>: none <span class="meta">!important</span>;</span><br><span class="line">  <span class="attribute">cursor</span>: default;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="selector-class">.icon_lists</span> <span class="selector-class">.icon</span> &#123;</span><br><span class="line">  <span class="attribute">display</span>: block;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">100px</span>;</span><br><span class="line">  <span class="attribute">line-height</span>: <span class="number">100px</span>;</span><br><span class="line">  <span class="attribute">font-size</span>: <span class="number">42px</span>;</span><br><span class="line">  <span class="attribute">margin</span>: auto;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#333</span>;</span><br><span class="line">  -webkit-<span class="attribute">transition</span>: font-size <span class="number">0.25s</span> linear, width <span class="number">0.25s</span> linear;</span><br><span class="line">  -moz-<span class="attribute">transition</span>: font-size <span class="number">0.25s</span> linear, width <span class="number">0.25s</span> linear;</span><br><span class="line">  <span class="attribute">transition</span>: font-size <span class="number">0.25s</span> linear, width <span class="number">0.25s</span> linear;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.icon_lists</span> <span class="selector-class">.icon</span><span class="selector-pseudo">:hover</span> &#123;</span><br><span class="line">  <span class="attribute">font-size</span>: <span class="number">100px</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="三、页脚爱心跳动动效"><a href="#三、页脚爱心跳动动效" class="headerlink" title="三、页脚爱心跳动动效"></a>三、页脚爱心跳动动效</h2><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.with-love</span> &#123;</span><br><span class="line">    <span class="attribute">animation</span>: icon-animate <span class="number">1.33s</span> ease-in-out infinite;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">@keyframes</span> icon-animate &#123;</span><br><span class="line">  <span class="number">0%</span>, <span class="number">100%</span> &#123;</span><br><span class="line">    <span class="attribute">transform</span>: <span class="built_in">scale</span>(<span class="number">1</span>);</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="number">10%</span>, <span class="number">30%</span> &#123;</span><br><span class="line">    <span class="attribute">transform</span>: <span class="built_in">scale</span>(<span class="number">0.9</span>);</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="number">20%</span>, <span class="number">40%</span>, <span class="number">60%</span>, <span class="number">80%</span> &#123;</span><br><span class="line">    <span class="attribute">transform</span>: <span class="built_in">scale</span>(<span class="number">1.1</span>);</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="number">50%</span>, <span class="number">70%</span> &#123;</span><br><span class="line">    <span class="attribute">transform</span>: <span class="built_in">scale</span>(<span class="number">1.1</span>);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E5%8D%9A%E5%AE%A2%E9%A1%B5%E9%9D%A2%E6%9B%B4%E6%96%B0%E6%97%A5%E5%BF%97/" rel="tag"># 博客页面更新日志</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2022/03/30/%E8%BF%99%E4%B8%AA%E5%AF%BC%E8%88%AA%E5%85%B6%E5%AE%9E%E6%98%AF%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2%EF%BC%8C%E6%88%91%E7%9C%9F%E6%98%AF%E9%97%B2%E5%BE%97%E8%9B%8B%E7%96%BC%E6%90%9E%E8%BF%99%E4%B9%88%E4%B8%AA%E7%8E%A9%E6%84%8F/" rel="prev" title="这个导航其实是一个博客，我真是闲得蛋疼搞这么个玩意">
+      <i class="fa fa-chevron-left"></i> 这个导航其实是一个博客，我真是闲得蛋疼搞这么个玩意
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%80%E3%80%81%E9%A1%B5%E9%9D%A2%E6%B1%89%E5%8C%96"><span class="nav-number">1.</span> <span class="nav-text">一、页面汉化</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-%E4%BF%AE%E6%94%B9-config-yml"><span class="nav-number">1.1.</span> <span class="nav-text">1.修改_config.yml</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%8C%E3%80%81%E5%9B%BE%E6%A0%87%E9%BC%A0%E6%A0%87%E6%82%AC%E6%B5%AE%E6%94%BE%E5%A4%A7%EF%BC%88%E9%83%A8%E5%88%86%E4%BB%A3%E7%A0%81%EF%BC%89"><span class="nav-number">2.</span> <span class="nav-text">二、图标鼠标悬浮放大（部分代码）</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-layout-swig"><span class="nav-number">2.1.</span> <span class="nav-text">1._layout.swig</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-CSS"><span class="nav-number">2.2.</span> <span class="nav-text">2.CSS</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%89%E3%80%81%E9%A1%B5%E8%84%9A%E7%88%B1%E5%BF%83%E8%B7%B3%E5%8A%A8%E5%8A%A8%E6%95%88"><span class="nav-number">3.</span> <span class="nav-text">三、页脚爱心跳动动效</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Chasel Wang</p>
+  <div class="site-description" itemprop="description">只是看着像导航</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">4</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-name">标签</span>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Chasel Wang</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a>
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+<script src="/js/iconfont.js"></script>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>
