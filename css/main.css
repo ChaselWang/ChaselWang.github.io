@@ -1197,7 +1197,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #d7ed58;
+  background: #f5695e;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2343,6 +2343,7 @@ body {
   overflow: hidden;
   *zoom: 1;
 }
+
 .icon_lists li {
   width: 100px;
   margin-bottom: 10px;
@@ -2350,6 +2351,8 @@ body {
   list-style: none !important;
   cursor: default;
 }
+
+
 .icon_lists .icon {
   display: block;
   height: 100px;
@@ -2361,55 +2364,28 @@ body {
   -moz-transition: font-size 0.25s linear, width 0.25s linear;
   transition: font-size 0.25s linear, width 0.25s linear;
 }
+
 .icon_lists .icon:hover {
   font-size: 100px;
 }
-.dib {
-  display: inline-block;
-  *display: inline;
-  *zoom: 1;
+
+.dib{display:inline-block;*display:inline;*zoom:1}.dib-box{font-size:0;*word-spacing:-1px}@media (-webkit-min-device-pixel-ratio:0){.dib-box{letter-spacing:-5px}}.dib-box .dib{vertical-align:top;font-size:12px;letter-spacing:normal;word-spacing:normal;line-height:inherit}.dib-box .justify,.justify{font-size:0;line-height:inherit}.justify{text-align:justify;text-justify:inter-ideograph;*zoom:1;-moz-text-align-last:justify;text-align-last:justify}.justify:after{content:"";display:inline-block;width:100%}.justify .dib{-moz-text-align-last:auto;text-align-last:auto;text-justify:auto;text-align:left;font-size:12px;letter-spacing:normal;word-spacing:normal}
+
+.navm {
+  opacity: 1;
+  transform: translateY(0);
+  animation-name: nava;
+  animation-duration: 0.2s;
+  animation-delay: -0.1s;
+  transition-timing-function: ease-in-out;
 }
-.dib-box {
-  font-size: 0;
-  *word-spacing: -1px;
-}
-@media (-webkit-min-device-pixel-ratio: 0) {
-  .dib-box {
-    letter-spacing: -5px;
-  }
-}
-.dib-box .dib {
-  vertical-align: top;
-  font-size: 12px;
-  letter-spacing: normal;
-  word-spacing: normal;
-  line-height: inherit;
-}
-.dib-box .justify,
-.justify {
-  font-size: 0;
-  line-height: inherit;
-}
-.justify {
-  text-align: justify;
-  text-justify: inter-ideograph;
-  *zoom: 1;
-  -moz-text-align-last: justify;
-  text-align-last: justify;
-}
-.justify:after {
-  content: "";
-  display: inline-block;
-  width: 100%;
-}
-.justify .dib {
-  -moz-text-align-last: auto;
-  text-align-last: auto;
-  text-justify: auto;
-  text-align: left;
-  font-size: 12px;
-  letter-spacing: normal;
-  word-spacing: normal;
+
+@keyframes nava {
+  0%   {}
+  25%  {}
+  50%  {transform: translateY(100%);opacity: 0;}
+  75%  {}
+  100% {opacity: 1;}
 }
 .container,
 .container-fluid,
