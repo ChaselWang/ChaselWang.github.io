@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "8be7a5ff4802e86a",
+        "id": "4d0f54bf3f982854",
         "type": "tabs",
         "children": [
           {
-            "id": "9283fa00f64698db",
+            "id": "9d3fff61e8892259",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "分类/300编程/个人网站开发计划.md",
+                "file": "归档/周刊/45周周刊.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "分类/300编程/个人网站开发计划.md",
+            "file": "归档/周刊/45周周刊.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "分类/300编程/个人网站开发计划.md",
+            "file": "归档/周刊/45周周刊.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -114,12 +114,12 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "分类/300编程/个人网站开发计划.md"
+            "file": "归档/周刊/45周周刊.md"
           }
         }
       }
     ],
-    "currentTab": 0
+    "currentTab": 2
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -131,13 +131,26 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "9283fa00f64698db",
+  "active": "9d3fff61e8892259",
   "lastOpenFiles": [
+    "归档/随笔/相亲总结.md",
+    "归档/周刊/45周周刊.md",
+    "归档/周刊",
+    "标签/自媒体标签.md",
+    "分类/300编程/个人网站开发计划.md",
+    "分类/300编程/hexo博客更新日志.md",
+    "归档/随笔/2403随笔.md",
+    "归档/随笔/各个风格音乐简谱表示.md",
+    "归档/日志/24下日志.md",
+    "关于/个人简历.md",
     "归档/随笔/2411随笔.md",
-    "归档/随笔/2411随笔.md.2024-11-02_10.00.32.foldersync.old",
     "归档/随笔/2409随笔.md",
+    "分类/100管理/极简算术人生.md",
+    "分类/100管理/极简管理.md",
+    "归档/月档案/19-25月档案.md",
+    "归档/随笔/关于安卓苹果开源和闭源的思考.md",
+    "归档/随笔/2411随笔.md.2024-11-02_10.00.32.foldersync.old",
     "归档/随笔/2407随笔.md",
-    "归档/随笔/2406随笔.md",
-    "归档/随笔/2403随笔.md"
+    "归档/随笔/2406随笔.md"
   ]
 }
