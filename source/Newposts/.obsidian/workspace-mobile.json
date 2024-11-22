@@ -73,7 +73,7 @@
         }
       }
     ],
-    "currentTab": 1
+    "currentTab": 0
   },
   "right": {
     "id": "45c107f97e66f83e",
@@ -131,10 +131,11 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "53bdca84304c9e26",
+  "active": "9d3fff61e8892259",
   "lastOpenFiles": [
-    "关于/个人简历.md",
+    "归档/随笔/成语合集.md",
     "归档/随笔/2411随笔.md",
+    "关于/个人简历.md",
     "归档/随笔/2409随笔.md",
     "归档/月档案/19-25月档案.md",
     "标签/自媒体标签.md",
