@@ -1,22 +1,18 @@
 {
   "main": {
-    "id": "6e44e9e9318010e0",
+    "id": "76d9e7090d87c1ce",
     "type": "split",
     "children": [
       {
-        "id": "4d0f54bf3f982854",
+        "id": "6797ef7a5e04c1e6",
         "type": "tabs",
         "children": [
           {
-            "id": "9d3fff61e8892259",
+            "id": "238488c1f2bd8661",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "归档/随笔/2411随笔.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -25,11 +21,11 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "b70ef51d6797acc0",
+    "id": "7a57a504845b3e46",
     "type": "mobile-drawer",
     "children": [
       {
-        "id": "ce906ef9236384bc",
+        "id": "52fcd62f2e704ba7",
         "type": "leaf",
         "state": {
           "type": "file-explorer",
@@ -39,12 +35,12 @@
         }
       },
       {
-        "id": "53bdca84304c9e26",
+        "id": "66abc5b16da0db5f",
         "type": "leaf",
         "state": {
           "type": "search",
           "state": {
-            "query": "晚上八点多",
+            "query": "",
             "matchingCase": false,
             "explainSearch": false,
             "collapseAll": false,
@@ -54,7 +50,7 @@
         }
       },
       {
-        "id": "3f6a91557d5acee1",
+        "id": "40b2ea6f369b2465",
         "type": "leaf",
         "state": {
           "type": "tag",
@@ -65,7 +61,7 @@
         }
       },
       {
-        "id": "404a3cac177b3e6a",
+        "id": "a8607cb20d72220b",
         "type": "leaf",
         "state": {
           "type": "bookmarks",
@@ -73,19 +69,18 @@
         }
       }
     ],
-    "currentTab": 1
+    "currentTab": 0
   },
   "right": {
-    "id": "45c107f97e66f83e",
+    "id": "0bd8c2b11507cf34",
     "type": "mobile-drawer",
     "children": [
       {
-        "id": "d87ac021a85b4158",
+        "id": "fba814846388e669",
         "type": "leaf",
         "state": {
           "type": "backlink",
           "state": {
-            "file": "归档/随笔/2411随笔.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -97,29 +92,26 @@
         }
       },
       {
-        "id": "d4eca79e07277438",
+        "id": "e8cae204a2e51ffa",
         "type": "leaf",
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "归档/随笔/2411随笔.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
         }
       },
       {
-        "id": "1e8c451517e11859",
+        "id": "a19642f3d6997bfd",
         "type": "leaf",
         "state": {
           "type": "outline",
-          "state": {
-            "file": "归档/随笔/2411随笔.md"
-          }
+          "state": {}
         }
       }
     ],
-    "currentTab": 2
+    "currentTab": 0
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -131,32 +123,6 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "53bdca84304c9e26",
-  "lastOpenFiles": [
-    "关于/个人简历.md",
-    "归档/随笔/2411随笔.md",
-    "归档/随笔/2409随笔.md",
-    "归档/月档案/19-25月档案.md",
-    "标签/自媒体标签.md",
-    "分类/100管理/进度条.md",
-    "分类/100管理/极简管理.md",
-    "分类/100管理/极简算术人生.md",
-    "归档/随笔/各个风格音乐简谱表示.md",
-    "归档/周刊/45周周刊.md",
-    "归档/日志/23上日志.md",
-    "归档.md",
-    "归档/日志/21上日志.md",
-    "归档/日志/22下日志.md",
-    "归档/日志/21下日志.md",
-    "归档/随笔/2403随笔.md",
-    "归档/随笔/相亲总结.md",
-    "归档/周刊",
-    "分类/300编程/个人网站开发计划.md",
-    "分类/300编程/hexo博客更新日志.md",
-    "归档/日志/24下日志.md",
-    "归档/随笔/关于安卓苹果开源和闭源的思考.md",
-    "归档/随笔/2411随笔.md.2024-11-02_10.00.32.foldersync.old",
-    "归档/随笔/2407随笔.md",
-    "归档/随笔/2406随笔.md"
-  ]
+  "active": "238488c1f2bd8661",
+  "lastOpenFiles": []
 }
