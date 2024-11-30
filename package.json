@@ -14,7 +14,7 @@
   "dependencies": {
     "acorn": "^8.11.3",
     "compromise": "^14.13.0",
-    "hexo": "^7.0.0",
+    "hexo": "^7.3.0",
     "hexo-enhancer": "^1.0.10",
     "hexo-generator-archive": "^2.0.0",
     "hexo-generator-category": "^2.0.0",
