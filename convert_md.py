@@ -21,7 +21,7 @@ title: {title}
 date: {date_str}
 categories: {categories}
 tags: [{tags_str}]
-description: {description}
+description: {tags_str}
 ---
 """
     
