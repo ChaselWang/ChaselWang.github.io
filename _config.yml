@@ -2,15 +2,12 @@
 ## Docs: https://hexo.io/docs/configuration.html
 ## Source: https://github.com/hexojs/hexo/
 
-
-
-
 # Site
 title: Hexo
 subtitle: ''
 description: ''
 keywords:
-author: Chasel Wang
+author: John Doe
 language: en
 timezone: ''
 
@@ -102,74 +99,19 @@ ignore:
 theme: next
 
 # Deployment
-# Docs: https://hexo.io/docs/one-command-deployment
-# deploy:
-#   type: ''
+## Docs: https://hexo.io/docs/one-command-deployment
+deploy:
+  type: ''
 
-# deploy:
-#   - type: git
-#     repository:
-#       github: https://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@github.com/ChaselWang/ChaselWang.github.io.git,_config.yml
+plugins: hexo-generate-feed
 
-# deploy:
-#   type: git
-#   repo: git@github.com/ChaselWang/ChaselWang.github.io.git
-#   branch: gh-pages
-
-
-enhancer:
-  enable: true
-  removeFrontMatter: true
-  # keywords: HTML, JavaScript, Hexo,日志,马克思,flask,django,随笔,努力
-  # tags: Java, Golang, React, Vue,日志,马克思主义,flask,django,随笔,考编
-# keywords:
-#   -HTML
-#   -JavaScript
-#   -Hexo
-#   -日志
-#   -马克思
-#   -flask
-#   -django
-#   -随笔
-#   -努力
-# tags:
-#   -Java,
-#   -Golang,
-#   -React,
-#   -Vue
-#   -日志
-#   -马克思主义
-#   -flask
-#   -django
-#   -随笔
-#   -考编
-
-# tag_generator:
-#   per_page: 10
-#   order_by: -date
-
-
-# scripts:
-#   auto-tag: scripts/auto-tag.js
-
-
-## hexo-auto-tag
-# auto_tag:
-#   enable: true
-#   apiKey: sk-6WbtF8Tuom4zivMlpVXsrD8s8lkRdkEXtmvMeZbKhsAUe2ss
-#   threshold: 0.23 # range: 0-1, 0.23 has been tested to be a good value. Lower values tend to result in fewer tags being assigned to a post.
-#   tags:
-#     - tag1
-#     - tag2
-#     - tag3
-
-# sk-6WbtF8Tuom4zivMlpVXsrD8s8lkRdkEXtmvMeZbKhsAUe2ss
-
-
-# Hexo 站点配置文件 _config.yml
-# 在这个文件中定义一个过滤器
-filter:
-  sort_by_updated:
-    - using: date
-      order: DESC
-      by: updated
+# Feed Plugin
+feed:
+  type: atom
+  path: atom.xml
+  limit: 0
+  hub:
+  content: true
+  content_limit: 140
+  content_limit_delim: ' '
+  order_by: -date
