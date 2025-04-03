@@ -3,7 +3,7 @@ title: cms的选择
 date: 2024-06-21 20:19:32
 categories: 随笔
 tags: [CMS]
-description: 
+description: CMS
 ---
 刚了解到一个词叫CMS（内容管理系统），瞬间又收获一大堆的术语。其中最深入人心的开源CMS是Wagtail，是一个基于Python Django的CMS。直接在首页拿自己的长处与Wordpress的短处比较。最后还是觉的一个答主说得好，不会编程的用Wordpress。会Python的用django-cms和wagtail。会前端的用strapi。不会前端，懂后端的用Ghost。
 
