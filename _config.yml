@@ -102,16 +102,3 @@ theme: next
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: ''
-
-plugins: hexo-generate-feed
-
-# Feed Plugin
-feed:
-  type: atom
-  path: atom.xml
-  limit: 0
-  hub:
-  content: true
-  content_limit: 140
-  content_limit_delim: ' '
-  order_by: -date
